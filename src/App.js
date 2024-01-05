@@ -1,9 +1,21 @@
-function App() {
+import "./css/styles.css";
+import MoviePlaylist from "./components/MoviePlaylist";
+import SongPlaylist from "./components/SongPlaylist";
+
+export default function App() {
+  const handleResetClick = () => {
+    
+  };
+
   return (
-    <div className="App">
-      App
+    <div className="container is-fluid">
+      <button onClick={() => handleResetClick()} className="button is-danger">
+        Reset Both Playlists
+      </button>
+      <hr />
+      <MoviePlaylist />
+      <hr />
+      <SongPlaylist />
     </div>
   );
 }
-
-export default App;
